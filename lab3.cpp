@@ -1,0 +1,23 @@
+#include <iostream>
+#include<iomanip>
+using namespace std;
+int main() {
+    string pro1,pro2;
+    int quantity1,quantity2;
+    float unit1,unit2,total1,total2;
+    cout<<"enter product name"<<endl;
+    cin>>pro1>>pro2;
+    cout<<"enter quantity"<<endl;
+    cin>>quantity1>>quantity2;
+    cout<<"enter price"<<endl;
+    cin>>unit1>>unit2;
+    total1=quantity1*unit1;
+    total2=quantity2*unit2;
+    cout<<"-------------------------------------------"<<endl;
+    cout<<left<<setw(10)<<"item"<<right<<setw(15)<<"quantity"<<right<<setw(10)<<"price"<<right<<setw(10)<<"total"<<endl;
+    cout<<"-------------------------------------------"<<endl;
+    cout<<left<<setw(15)<<pro1<<right<<setw(10)<<quantity1<<right<<setw(10)<<unit1<<right<<setw(10)<<total1<<endl;
+    cout<<left<<setw(15)<<pro2<<right<<setw(10)<<quantity2<<right<<setw(10)<<unit2<<right<<setw(10)<<total2<<endl;
+    cout<<"-------------------------------------------"<<endl;
+    return 0;
+}
