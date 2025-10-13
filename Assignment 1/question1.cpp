@@ -30,5 +30,4 @@ int main()
     cout<<"Sum of two numbers= "<<sum1<<endl<<"Difference of two numbers= "<<diff1<<endl<<"Product of two numbers= "<<pro1<<endl<<"Quotient of two numbers= "<<quo1<<endl;
     //we have displayed the output with integer data type so the decimal will be removed automatically.
   return 0;
-
 }
