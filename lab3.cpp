@@ -18,6 +18,6 @@ int main() {
     cout<<"-------------------------------------------"<<endl;
     cout<<left<<setw(15)<<pro1<<right<<setw(10)<<quantity1<<right<<setw(10)<<unit1<<right<<setw(10)<<total1<<endl;
     cout<<left<<setw(15)<<pro2<<right<<setw(10)<<quantity2<<right<<setw(10)<<unit2<<right<<setw(10)<<total2<<endl;
-    cout<<"-------------------------------------------"<<endl;
+    cout<<"---------------------------------------"<<endl;
     return 0;
 }
