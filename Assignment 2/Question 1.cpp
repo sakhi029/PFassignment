@@ -14,19 +14,19 @@ void menu(){
     }
 }
 void booking(){
-    int row, col;
+    int row, column;
     while(true){
-        cout << "To reserve a seat, please enter the Row (1-3) and Column (1-4) OR press 0 0 to Exit: ";
-        cin >> row >> col;
-        if (row == 0 || col == 0) {
+        cout << "Please enter the Row (1-3) and Column (1-4) OR press 0 0 to Exit: ";
+        cin >> row >> column;
+        if (row == 0 || column == 0) {
         break;
         }
-        if (row >= 1 && row <= 3 && col >= 1 && col <= 4){
-            if (cinema[row - 1][col - 1] == 'F'){
-                cinema[row - 1][col - 1] = 'R';
-                cout << "You have successfully reserved " << row << "-" << col << endl; 
+        if (row >= 1 && row <= 3 && column >= 1 && column <= 4){
+            if (cinema[row - 1][column - 1] == 'F'){
+                cinema[row - 1][column - 1] = 'R';
+                cout << "You have successfully reserved the seat " << row << "-" << column << endl; 
             }else{
-                cout << "Seat Not Available For " << row << "-" << col << endl; 
+                cout << "Seat Not Available For " << row << "-" << column << endl; 
             }
         } else{
             cout << "Wrong Input " << endl;
